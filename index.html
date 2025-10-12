@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksymilian Kijewski | Software Engineering Portfolio</title>
+    <style>
+        /* --- Basic Reset and Styling --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* --- Header/Navigation --- */
+        header {
+            background-color: #004d99; /* Dark Blue */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* --- Section Styling --- */
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #004d99;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        /* --- Intro Section --- */
+        #intro {
+            background-color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        #intro h3 {
+            font-weight: 300;
+            color: #666;
+        }
+        
+        /* --- About Me / Skills --- */
+        .content-flex {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .about-text, .skills-list {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .skills-list ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e0f2ff; /* Light Blue */
+            color: #004d99;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        /* --- Projects Section --- */
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #007acc; /* Medium Blue */
+            margin-top: 0;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* --- CV & Contact Section --- */
+        #contact {
+            text-align: center;
+        }
+
+        .cv-button {
+            display: inline-block;
+            background-color: #ff6600; /* Orange */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .cv-button:hover {
+            background-color: #cc5200;
+        }
+
+        .social-links a {
+            color: #004d99;
+            margin: 0 15px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #222;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .content-flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Maksymilian Kijewski</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section id="intro">
+            <h2>Seeking Software Engineering Placement</h2>
+            <h3>Second-Year Computer Science with Industrial Placement Student</h3>
+            <p>intro</p>
+        </section>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p></p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <ul>
+                    <li>Java</li>
+                    <li>C / C++</li>
+                    <li>HTML / Web Design</li>
+                    <li>Problem Solving</li>
+                    <li>Algorithms</li>
+                    <li>Team Management</li>
+                    <li>Data Structures</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project-card">
+                <h3>1.</h3>
+                <p>about</p>
+                <a href="#">View Code (GitHub)</a>
+            </div>
+
+            <div class="project-card">
+                <h3>2.</h3>
+                <p>about</p>
+                <a href="#">View Code (GitHub)</a>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px;">More projects available on my GitHub profile!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Connect & Download</h2>
+            
+            <a href="CV.pdf" class="cv-button" download>Download My CV (PDF)</a>
+            <p>Get in touch to discuss technical opportunities and placements.</p>
+
+            <div class="social-links">
+                <a href="mailto:arturkijewski66@gmail.com">Email</a> |
+                <a href="#">Mobile: 07548370301</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">Indeed</a> |
+                <a href="#">GitHub</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maksymilian Kijewski. Built with HTML/CSS.</p>
+    </footer>
+
+</body>
+</html>

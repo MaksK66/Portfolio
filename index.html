@@ -26,19 +26,47 @@
         header {
             background-color: #004d99; /* Dark Blue */
             color: white;
-            padding: 1rem 0;
+            padding-top: 1rem;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
-            margin: 0;
+            margin: 0 0 10px 0;
             font-size: 2.5em;
         }
+
+        /* --- NEW NAVBAR STYLES --- */
+        .navbar {
+            background-color: #007acc; /* Medium Blue for contrast */
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            margin: 0 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            background-color: #004d99; /* Darker blue on hover */
+        }
+
 
         /* --- Section Styling --- */
         section {
             padding: 40px 0;
             border-bottom: 1px solid #ddd;
+            padding-top: 60px;
+            margin-top: -60px;
         }
 
         h2 {
@@ -167,8 +195,18 @@
         <div class="container">
             <h1>Maksymilian Kijewski</h1>
         </div>
-    </header>
 
+        <nav class="navbar">
+            <div class="container">
+                <a href="#intro">Top</a>
+                <a href="#about-me">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        </header>
+    
     <main class="container">
         
         <section id="intro">

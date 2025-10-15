@@ -97,6 +97,16 @@
             align-items: flex-start;
         }
 
+        .profile-photo {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 50%; 
+            border: 4px solid #007acc; /* Blue border */
+            display: block; 
+            margin: 0 auto 20px auto; 
+        }
+
         .about-text, .skills-list {
             flex: 1;
             padding: 20px;
@@ -226,7 +236,7 @@
         </section>
         
         <section id="about-me">
-            <img src="myself.png" alt="Photo of myself" style="width: 100%; height: auto; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px;">
+            <img src="myself.png" alt="Photo of myself" class="profile-photo">
             <h2>About Me</h2>
             <div class="about-text">
                 <p>I am keen on persuing a career in the Software Engineering space, I developed this interest in computing and software from my personal leisure of using a computer at home and from the stem related classes I took in high school,
